@@ -1,0 +1,101 @@
+.Container {
+    display: flex;
+    font-family: "Arial", sans-serif;
+    background-color: #ffffff; /* White background color */
+    color: #000000; /* Black text color */
+  }
+  
+  /* Sidebar styles */
+  .Sidebar {
+    width: 250px;
+    background-color: #333;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+
+  }
+  
+  .SidebarTitle {
+    color: #1d8cf8;
+  }
+  
+  .SidebarList {
+    list-style-type: none;
+    padding: 0;
+
+  }
+  
+  .SidebarItem {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 30px 20px;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    user-select: none;
+  }
+
+  .SidebarItem:hover {
+    background-color: #1d8cf8;
+    color: white;
+  }
+
+  .SidebarItem:active {
+    background-color: #157ade;
+    color: white;
+  }
+  
+  /* Content styles */
+  .Content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .FormContainer {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .FormGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .Label {
+    margin-bottom: 0.5rem;
+    color: #1d8cf8;
+  }
+  
+  .Input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid #1d8cf8;
+    border-radius: 4px;
+    background-color: #333;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    width: 100%;
+  }
+  
+  .Button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #1d8cf8;
+    color: #ffffff;
+    cursor: pointer;
+    width: 50%;
+    margin: 1rem auto;
+  }

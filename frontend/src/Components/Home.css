@@ -1,0 +1,11 @@
+#Container
+{
+ font-family: 'Arial', sans-serif;
+ background-color: #121212;
+ color: #ffffff;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
