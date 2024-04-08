@@ -47,7 +47,7 @@ const Predict = () => {
       // Now make a request to Flask server for prediction
       const mlResponse = await axios.post('/fapi/predict', formData);
       console.log('Prediction:', mlResponse.data);
-      // setPredictionResult(mlResponse.data); // Assuming the prediction data is a string
+      setPredictionResult(mlResponse.data.message); // Assuming the prediction data is a string
     } catch (error) {
       console.error('Error:', error);
     }
