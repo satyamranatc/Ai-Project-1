@@ -45,9 +45,9 @@ const Predict = () => {
       console.log('Patient data saved:', response.data);
 
       // Now make a request to Flask server for prediction
-      const mlResponse = await axios.post('http://your-flask-server-url/predict', formData);
+      const mlResponse = await axios.post('/fapi/predict', formData);
       console.log('Prediction:', mlResponse.data);
-      setPredictionResult(mlResponse.data); // Assuming the prediction data is a string
+      // setPredictionResult(mlResponse.data); // Assuming the prediction data is a string
     } catch (error) {
       console.error('Error:', error);
     }
@@ -80,7 +80,7 @@ const Predict = () => {
                 className="Input"
               />
             </div>
-            {/* <div className="FormGroup">
+             <div className="FormGroup">
               <label className="Label">Age</label>
               <input
                 type="number"
@@ -193,7 +193,7 @@ const Predict = () => {
                 required
                 className="Input"
               />
-            </div> */}
+            </div>
             <button type="submit" className="Button">Submit</button>
           </form>
           {/* Display prediction result */}
